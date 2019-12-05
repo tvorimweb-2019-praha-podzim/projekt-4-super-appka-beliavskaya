@@ -13,12 +13,51 @@ html { box-sizing: border-box; }
  https://fonts.google.com/specimen/Roboto
 */
 
-body {
+
+.hlavicka {
+
+    background-color: white;
+    color: #25133d;
+    width: 960px;
     padding: 0;
+    margin: 0 auto;
+        
+}
+
+ul {
+    list-style: none;
     margin: 0;
+       
+}
+
+li {
+    display: inline-block;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.hlavicka a {
+    text-decoration: none;
+    color: #25133d;
+    padding: 20px;
+    margin: 0;
+    display: block;
+}
+
+.hlavicka a:hover {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+body {
     background-color: #e5e5e5;
     font-family: 'Roboto', sans-serif;
     line-height: 1.5;
+    margin: 0;
+    
+
 }
 
     
@@ -81,5 +120,53 @@ a.tlacitko {
     justify-content: right;
 }
     
+.kontejner {
+	display: flex;
+    flex-wrap: wrap;
+    width: 960px;
+    margin: 0 auto;
+    padding: 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    
+}
+
+.obal {
+    flex: 1 1 100%;
+    
+}
+
+.centerimg {
+display: block;
+margin: 0 auto;
+}
+.prvni,
+.druhy,
+.treti {
+    
+    flex: 1 1 calc(100% / 3);
+    padding: 50px;
+    margin: 0;
+    background-color: white;
+    display: inline-flex;
+    flex-direction: column;
+    text-align: center
+    
+}
+
+footer {
+    background-color: #48418e;
+    padding: 0;
+    margin: 0 auto;
+    color: white;
+    width: 960px;
+    border: 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+
+}
+ footer p {
+ padding: 15px;
+ text-align: center;
+ margin: 0;
+ }
 
 /* ----- zde začni psát vlastní CSS ----- */
